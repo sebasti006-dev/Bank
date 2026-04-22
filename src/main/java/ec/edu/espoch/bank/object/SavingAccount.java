@@ -14,6 +14,11 @@ public class SavingAccount extends Account {
     public SavingAccount() {
     }
 
+    public SavingAccount(float balance, float anualInterest) {
+        super(balance, anualInterest);
+    }
+
+
     public boolean isStatus() {
         return status;
     }
@@ -22,22 +27,48 @@ public class SavingAccount extends Account {
         this.status = status;
     }
 
-    public boolean depositAmount(float value) {
-
-        return false;
+    public float getBalance() {
+        return balance;
     }
 
-    public boolean withdrawAmount(float value) {
-        return false;
+    public void setBalance(float balance) {
+        this.balance = balance;
     }
 
-    public boolean monthlyStatement() {
-        return false;
+    public int getNumberDep() {
+        return numberDep;
     }
 
-    public void print() {
-
+    public void setNumberDep(int numberDep) {
+        this.numberDep = numberDep;
     }
+
+    public int getNumberWithDrawals() {
+        return numberWithDrawals;
+    }
+
+    public void setNumberWithDrawals(int numberWithDrawals) {
+        this.numberWithDrawals = numberWithDrawals;
+    }
+
+    public float getAnualInterest() {
+        return anualInterest;
+    }
+
+    public void setAnualInterest(float anualInterest) {
+        this.anualInterest = anualInterest;
+    }
+
+    public float getMonthlyFee() {
+        return monthlyFee;
+    }
+
+    public void setMonthlyFee(float monthlyFee) {
+        this.monthlyFee = monthlyFee;
+    }
+
+ 
+
 }
 
 

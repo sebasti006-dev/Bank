@@ -10,11 +10,9 @@ package ec.edu.espoch.bank.daointerface;
  */
 public interface DaoCheckingAccounts {
 
-    public boolean depositAmount(float value);
+    public boolean deposit(float value);
 
-    public boolean updatingBalance();
-
-    public boolean withdrawAmount();
+    public boolean withdraw(float value);
 
     public boolean montlyStatement();
 

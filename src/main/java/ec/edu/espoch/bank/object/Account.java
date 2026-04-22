@@ -23,7 +23,7 @@ public class Account {
         this.balance = balance;
         this.anualInterest = anualInterest;
     }
-
+/*
     public float getBalance() {
         return balance;
     }
@@ -63,35 +63,7 @@ public class Account {
     public void setMonthlyFee(float monthlyFee) {
         this.monthlyFee = monthlyFee;
     }
-    
-    public boolean depositAmount(float value ){
-        
-        return false;
-        
-    }
-public boolean updatingBalance(){
-    
-        return false;
-    
-}
-public boolean withdrawAmount(float value){
-    
-        return false;
-    
-}
- public float calculateInterest(){
-     
-        return 0;
-     
- }
-public boolean monthlyStatement(){
-    
-        return false;
-    
-}
-public void print(){
-    
-}
+    */
 
 }
 
