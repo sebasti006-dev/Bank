@@ -5,13 +5,12 @@
 package ec.edu.espoch.bank.datasource;
 
 import ec.edu.espoch.bank.daointerface.DaoSavingAccounts;
-import ec.edu.espoch.bank.object.Account;
 
 /**
  *
  * @author Sebas
  */
-public class SavingAccounts extends Account implements DaoSavingAccounts{
+public class SavingAccounts extends Accounts implements DaoSavingAccounts{
     @Override
     public boolean deposit(float value){
         

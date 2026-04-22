@@ -4,37 +4,38 @@
  */
 package ec.edu.espoch.bank.datasource;
 
+import ec.edu.espoch.bank.daointerface.DaoCheckingAccounts;
+
 /**
  *
  * @author Sebas
  */
-public class Acounts {
+public class CheckingAccounts extends Accounts implements DaoCheckingAccounts {
 
-    public boolean depositAmount(float value) {
+    @Override
+    public boolean deposit(float value) {
 
         return false;
 
     }
 
+    @Override
     public boolean withdraw(float value) {
 
-        return true;
+        return false;
 
     }
 
-    public float calculateInterest() {
+    @Override
+    public boolean montlyStatement() {
 
-        return 0.0f;
-
-    }
-
-    public boolean monthlyStatement() {
-
-        return true;
+        return false;
 
     }
 
+    @Override
     public void print() {
 
     }
+
 }
