@@ -4,15 +4,21 @@
  */
 package ec.edu.espoch.bank.datasource;
 
+import ec.edu.espoch.bank.object.Account;
+
 /**
  *
  * @author Sebas
  */
 public class Accounts {
 
-    public boolean deposit(float value) {
-
-        return false;
+    public boolean deposit(Account account, float value) {
+  
+        float newBalance= account.getBalance()+value;
+        account.setBalance(newBalance);
+        return true;
+               
+       
 
     }
 
@@ -34,7 +40,12 @@ public class Accounts {
 
     }
 
-    public void print() {
+    public void print(Account account) {
+        System.out.println("Saldo: "+ account.getBalance() );
+        System.out.println("Deposito: "+account.getNumberDep());
+        System.out.println("Cuota Mensual: "+ account.getMonthlyFee());
+        System.out.println("Numero de retiros: "+ account.getNumberWithDrawals());
+        System.out.println("Interes Mesual: "+ account.getAnualInterest());
 
     }
 }

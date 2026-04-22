@@ -22,8 +22,9 @@ public class Account {
     public Account(float balance, float anualInterest) {
         this.balance = balance;
         this.anualInterest = anualInterest;
+        
     }
-/*
+
     public float getBalance() {
         return balance;
     }
@@ -63,7 +64,7 @@ public class Account {
     public void setMonthlyFee(float monthlyFee) {
         this.monthlyFee = monthlyFee;
     }
-    */
+
 
 }
 
