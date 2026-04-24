@@ -13,20 +13,22 @@ import ec.edu.espoch.bank.object.Account;
 public class Accounts {
 
     public boolean deposit(Account account, float value) {
-  
-        float newBalance= account.getBalance()+value;
+
+        float newBalance = account.getBalance() + value;
         account.setBalance(newBalance);
         return true;
-               
-       
 
     }
 
     public boolean withdraw(Account account, float value) {
-  float newBalance = account.getBalance()-value;
-     account.setBalance(newBalance);
-        return true;
+        boolean resp = false;
+        if (account.getBalance() > value) {
 
+            float newBalance = account.getBalance() - value;
+            account.setBalance(newBalance);
+            return true;
+        }
+        return resp;
     }
 
     public float calculateInterest() {
@@ -42,11 +44,11 @@ public class Accounts {
     }
 
     public void print(Account account) {
-        System.out.println("Saldo: "+ account.getBalance() );
-        System.out.println("Deposito: "+account.getNumberDep());
-        System.out.println("Cuota Mensual: "+ account.getMonthlyFee());
-        System.out.println("Numero de retiros: "+ account.getNumberWithDrawals());
-        System.out.println("Interes Mesual: "+ account.getAnualInterest());
+        System.out.println("Saldo: " + account.getBalance());
+        System.out.println("Deposito: " + account.getNumberDep());
+        System.out.println("Cuota Mensual: " + account.getMonthlyFee());
+        System.out.println("Numero de retiros: " + account.getNumberWithDrawals());
+        System.out.println("Interes Mesual: " + account.getAnualInterest());
 
     }
 }

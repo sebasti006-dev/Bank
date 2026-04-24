@@ -9,7 +9,7 @@ package ec.edu.espoch.bank.object;
  * @author Sebas
  */
 public class SavingAccount extends Account {
-      protected boolean status;
+      protected boolean status= false;
 
     public SavingAccount() {
     }
