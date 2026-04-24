@@ -22,8 +22,9 @@ public class Accounts {
 
     }
 
-    public boolean withdraw(float value) {
-
+    public boolean withdraw(Account account, float value) {
+  float newBalance = account.getBalance()-value;
+     account.setBalance(newBalance);
         return true;
 
     }

@@ -5,6 +5,7 @@
 package ec.edu.espoch.bank.datasource;
 
 import ec.edu.espoch.bank.daointerface.DaoCheckingAccounts;
+import ec.edu.espoch.bank.object.Account;
 
 /**
  *
@@ -14,14 +15,14 @@ public class CheckingAccounts extends Accounts implements DaoCheckingAccounts {
 
     @Override
     public boolean deposit(float value) {
-
+    
         return false;
 
     }
 
-    @Override
-    public boolean withdraw(float value) {
-
+    public boolean withdraw( float value) {
+  
+            
         return false;
 
     }
